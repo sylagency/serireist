@@ -1,22 +1,40 @@
-
 const btn = document.querySelector('.menu-btn');
 const nav = document.querySelector('.nav');
 if(btn && nav){
-  btn.addEventListener('click', ()=> nav.classList.toggle('open'));
+  btn.addEventListener('click', ()=>{
+    const open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', ()=>{
+    nav.classList.remove('open');
+    btn.setAttribute('aria-expanded', false);
+  }));
 }
 
-const plane = document.querySelector('#plane-dot');
-const path = document.querySelector('#travel-path');
-if(plane && path){
+// Flugzeuge fliegen hin und zurück: Reise 1 (Sansibar) und Reise 2 (Algier)
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fly(planeSel, pathSel, cycle, offset){
+  const plane = document.querySelector(planeSel);
+  const path = document.querySelector(pathSel);
+  if(!plane || !path) return;
   const len = path.getTotalLength();
-  function animatePlane(t){
-    const cycle = 18000;
-    const pct = (t % cycle) / cycle;
-    const p = path.getPointAtLength(len * pct);
-    const p2 = path.getPointAtLength(Math.min(len, len * pct + 1));
-    const ang = Math.atan2(p2.y - p.y, p2.x - p.x) * 180 / Math.PI;
+  function place(pct, back){
+    const at = len * pct;
+    const p = path.getPointAtLength(at);
+    const q = path.getPointAtLength(Math.min(len, Math.max(0, at + (back ? -1 : 1))));
+    const ang = Math.atan2(q.y - p.y, q.x - p.x) * 180 / Math.PI;
     plane.setAttribute('transform', `translate(${p.x},${p.y}) rotate(${ang})`);
-    requestAnimationFrame(animatePlane);
   }
-  requestAnimationFrame(animatePlane);
+  if(reduce){ place(.5, false); return; }
+  function frame(t){
+    const x = ((t + offset) % cycle) / cycle;
+    const back = x > .5;
+    const pct = back ? 2 - x * 2 : x * 2;
+    // sanftes Abheben und Landen
+    place(pct * pct * (3 - 2 * pct), back);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
 }
+fly('#plane-1', '#trip-1', 16000, 0);
+fly('#plane-2', '#trip-2', 11000, 3000);

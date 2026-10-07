@@ -1,3 +1,4 @@
 *.zip
 _nicht-hochladen/
 .DS_Store
+.claude/
