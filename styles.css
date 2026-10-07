@@ -196,6 +196,7 @@ a{text-decoration:none;color:inherit}
 .block-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
 .block-head h3{font-size:clamp(28px,3vw,42px);line-height:1;margin:4px 0 0}
 .block-head .kicker{margin:0;color:var(--text)}
+.block-head .block-sub{margin:6px 0 0;font-size:14px;font-style:italic;color:var(--text)}
 .items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
 .items.acts{grid-template-columns:repeat(2,1fr);gap:14px}
 .item{
@@ -244,8 +245,8 @@ a{text-decoration:none;color:inherit}
 .highlights span:not(.ic-wrap){display:block;font-size:13px;color:var(--text);line-height:1.35;margin-top:2px}
 .algier .highlights li{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16)}
 .algier .highlights span:not(.ic-wrap){color:rgba(255,255,255,.72)}
-.algier .ic-wrap{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#fff;box-shadow:none}
-.algier .ic-wrap.big{background:var(--pink)}
+.algier .hotel .ic-wrap{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.2);color:#fff;box-shadow:none}
+.algier .hotel .ic-wrap.big{background:var(--pink)}
 .why{
   margin-top:18px;padding:18px 20px;border-radius:20px;
   background:rgba(255,47,146,.07);border-left:4px solid var(--pink)
