@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>seri reist — Onepager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">
+        <img src="assets/icon.png" alt="seri reist Icon" />
+        <span>SERI REIST</span>
+      </a>
+      <button class="menu-btn" aria-label="Menü öffnen">☰</button>
+      <nav class="nav">
+        <a href="#route">Route</a>
+        <a href="#stone-town">Stone Town</a>
+        <a href="#nungwi">Nungwi</a>
+        <a href="#algier">Algier</a>
+        <a href="#sprachkurs">Sprachkurs</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">TRAVEL · REELS · GUIDES</p>
+          <h1 class="serif">Schön unterwegs.<br>Mit echten Tipps,<br>Hotels & Food.</h1>
+          <p>Ein farbiger Onepager für Reiseerlebnisse, Reels und kuratierte Travel-Guides — gestartet mit Stone Town, Nungwi und Algier.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#stone-town">Stone Town starten ↓</a>
+            <a class="btn secondary" href="#route">Route ansehen</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/icon.png" alt="Illustration von seri reist" />
+        </div>
+      </div>
+    </section>
+
+    <section class="route" id="route">
+      <div class="wrap">
+        <div class="route-box">
+          <div class="route-top">
+            <div>
+              <p class="kicker">Reiseroute</p>
+              <h2 class="serif" style="font-size:clamp(34px,4vw,56px);line-height:.95;margin:8px 0 0">Die geplante Route<br>als kleine Flugkarte.</h2>
+            </div>
+            <div>
+              <span class="route-code">ZRH → MXP → ADD → ZEZ → ADD → MXP → ZRH → FCO → ALG → FCO → ZRH</span>
+              <p>Die Route steht weiter oben auf der Seite und gibt dem Onepager sofort eine persönliche Reise-Dynamik.</p>
+            </div>
+          </div>
+          <div class="route-map">
+            <svg viewBox="0 0 1000 460" role="img" aria-label="Animierte Karte der Flugroute">
+              <path class="land" d="M60 90 C120 35, 260 28, 338 88 C392 130, 430 131, 476 122 C541 108, 594 122, 647 175 C695 223, 721 281, 710 334 C699 388, 645 420, 575 416 C505 411, 474 364, 426 335 C381 309, 315 301, 264 282 C205 261, 148 220, 110 181 C77 146, 42 121, 60 90 Z" opacity=".85"/>
+              <path class="land" d="M725 140 C780 115, 864 132, 911 172 C946 202, 957 253, 930 286 C906 314, 857 330, 819 315 C781 301, 739 278, 723 238 C709 205, 700 161, 725 140 Z" opacity=".8"/>
+              <path class="land" d="M598 222 C628 211, 677 225, 702 252 C732 285, 738 321, 716 350 C692 382, 650 392, 611 383 C572 373, 541 347, 534 313 C528 283, 564 236, 598 222 Z"/>
+              <path id="travel-path" class="route-line" d="M194 97 L216 118 L632 252 L640 330 L632 252 L216 118 L194 97 L252 155 L148 179 L252 155 L194 97" />
+              <circle class="node" cx="194" cy="97" r="6" />
+              <circle class="node" cx="216" cy="118" r="6" />
+              <circle class="node-alt" cx="632" cy="252" r="7" />
+              <circle class="node-alt" cx="640" cy="330" r="7" />
+              <circle class="node" cx="252" cy="155" r="6" />
+              <circle class="node" cx="148" cy="179" r="6" />
+
+              <text class="label" x="174" y="82">ZRH</text>
+              <text class="sub" x="160" y="67">Zürich</text>
+
+              <text class="label" x="206" y="103">MXP</text>
+              <text class="sub" x="198" y="88">Mailand</text>
+
+              <text class="label" x="241" y="141">FCO</text>
+              <text class="sub" x="232" y="126">Rom</text>
+
+              <text class="label" x="126" y="165">ALG</text>
+              <text class="sub" x="114" y="150">Algier</text>
+
+              <text class="label" x="614" y="238">ADD</text>
+              <text class="sub" x="596" y="223">Addis Abeba</text>
+
+              <text class="label" x="624" y="352">ZEZ</text>
+              <text class="sub" x="603" y="367">Sansibar</text>
+
+              <g id="plane-dot" transform="translate(194,97)">
+                <text class="plane" x="-12" y="-10">✈</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stone-town">
+      <div class="wrap">
+        <article class="destination stone">
+          <div class="dest-hero">
+            <div class="dest-copy">
+              <p class="kicker">01 · STONE TOWN</p>
+              <h2 class="serif">Stone Town.</h2>
+              <p class="intro">Stone Town ist der perfekte Start in Sansibar: Gassen, Gewürztüren, kleine Innenhöfe, Sunset-Vibes am Wasser und genau dieses besondere Altstadtgefühl, das sofort hängen bleibt.</p>
+              <div class="meta">
+                <span class="badge">Zanzibar Guide</span>
+                <span class="badge">Reel + Tipps</span>
+                <span class="badge">Food & Hotel</span>
+              </div>
+            </div>
+            <div class="video-shell">
+              <video controls playsinline muted loop poster="assets/stone-town-poster.jpg">
+                <source src="assets/zanzibar.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="dest-body">
+            <div class="grid-2">
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Aktivitäten</h3>
+                <ol>
+                  <li><strong>Durch Stone Town treiben</strong> — einfach zu Fuss losgehen und die historischen Gassen, Türen und kleinen Plätze entdecken.</li>
+                  <li><strong>Forodhani Gardens bei Sonnenuntergang</strong> — am Abend wird die Uferpromenade richtig lebendig.</li>
+                  <li><strong>Old Fort anschauen</strong> — der alte Festungskomplex gehört zu den Klassikern direkt im Zentrum.</li>
+                  <li><strong>Darajani Market besuchen</strong> — perfekt, um den lokalen Alltag und Gewürze, Früchte und Streetlife zu erleben.</li>
+                  <li><strong>Haus der Wunder & Waterfront</strong> — einer der ikonischen Punkte für den ersten Stadtblick.</li>
+                  <li><strong>Prison Island als Bootsausflug</strong> — beliebt für einen halben Tag und als Kontrast zur Altstadt.</li>
+                </ol>
+              </div>
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Restaurants</h3>
+                <ol>
+                  <li><strong>Lukmaan Swahili Restaurant</strong> — unkompliziert, lokal und ideal für ein authentisches Essen.</li>
+                  <li><strong>The Secret Garden at Emerson Spice</strong> — atmosphärisch und super für einen besonderen Abend.</li>
+                  <li><strong>6 Degrees South</strong> — moderner Spot direkt am Wasser.</li>
+                  <li><strong>Beach House Zanzibar</strong> — relaxed, direkt an der Küste und gut für den Sunset.</li>
+                  <li><strong>Cape Town Fish Market Zanzibar</strong> — gute Wahl für Seafood mit Aussicht.</li>
+                  <li><strong>Hanoi House Stone Town</strong> — ein schöner Mix, wenn du zwischendurch etwas anderes als klassische Inselküche willst.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="hotel">
+              <p class="kicker">Hotel Review</p>
+              <h3 class="serif">Turaco Spice Tree, a Tribute Portfolio Hotel</h3>
+              <p>Mein Eindruck: eine sehr gute Wahl, wenn du Stone Town wirklich zu Fuss erleben willst. Das Hotel passt zum historischen Setting, fühlt sich nach Stadtaufenthalt an und ist ideal als Base zwischen Altstadt, Waterfront und Restaurants.</p>
+              <div class="review">
+                <p><strong>Empfehlung:</strong> würde ich vor allem für einen stilvollen Stone-Town-Stop empfehlen — perfekt für alle, die Kultur, kurze Wege und eine schöne City-Hotel-Atmosphäre suchen.</p>
+              </div>
+              <a class="hotel-link" href="https://www.marriott.com/en-us/hotels/travel/znzst-turaco-spice-tree-a-tribute-portfolio-hotel" target="_blank" rel="noopener">Hotel ansehen</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="nungwi">
+      <div class="wrap">
+        <article class="destination nungwi">
+          <div class="dest-hero reverse">
+            <div class="video-shell">
+              <video controls playsinline muted loop poster="assets/stone-town-poster.jpg">
+                <source src="assets/zanzibar.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="dest-copy">
+              <p class="kicker">02 · NUNGWI</p>
+              <h2 class="serif">Nungwi.</h2>
+              <p class="intro">Nungwi ist die leichtere, sonnigere Sansibar-Seite: weisser Strand, türkisfarbenes Wasser, Boote im Sand und genau der Ort für lange Beachdays, Sunset-Dinner und ruhige Resort-Momente.</p>
+              <div class="meta">
+                <span class="badge">Beach Guide</span>
+                <span class="badge">North Zanzibar</span>
+                <span class="badge">Hotel & Food</span>
+              </div>
+            </div>
+          </div>
+          <div class="dest-body">
+            <div class="grid-2">
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Aktivitäten</h3>
+                <ol>
+                  <li><strong>Nungwi Beach geniessen</strong> — einer der schönsten Strände im Norden mit vielen Postkartenmomenten.</li>
+                  <li><strong>Sunset Dhow Cruise</strong> — ein Klassiker in Nungwi und perfekt für stimmungsvolle Abendbilder.</li>
+                  <li><strong>Schnorcheln oder Tauchen</strong> — viele Touren starten an der Nordküste und führen zu klaren Riffen.</li>
+                  <li><strong>Mnarani Marine Turtle Conservation Pond</strong> — kurzer Besuch mit Meeresschildkröten-Bezug.</li>
+                  <li><strong>Fischmarkt & Boat Building</strong> — lokaler, authentischer Einblick in den Küstenalltag.</li>
+                  <li><strong>Abstecher nach Kendwa</strong> — ideal für einen Strandwechsel oder einen langen Sunset-Spaziergang.</li>
+                </ol>
+              </div>
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Restaurants</h3>
+                <ol>
+                  <li><strong>Fisherman’s Seafood & Grill</strong> — direkt am Strand und ein schöner Spot für Seafood.</li>
+                  <li><strong>Fish Market Local Restaurant</strong> — unkompliziert, beliebt und sehr passend für frischen Fisch.</li>
+                  <li><strong>Passion & Thyme</strong> — gemütlich und ideal für einen entspannten Abend.</li>
+                  <li><strong>197 Restaurant & Bar</strong> — stylisch, modern und gut für Dinner mit Atmosphäre.</li>
+                  <li><strong>MAHI MAHI Beach Bar & Restaurant</strong> — locker, direkt am Wasser und gut für Sundowner.</li>
+                  <li><strong>Hanoi House Nungwi</strong> — eine gute Alternative für etwas Abwechslung.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="hotel alt">
+              <p class="kicker">Hotel Review</p>
+              <h3 class="serif">Turaco Nungwi Resort, a Tribute Portfolio Hotel</h3>
+              <p>Mein Eindruck: wenn der Fokus auf Strandgefühl, Erholung und einem unkomplizierten Resort-Setup liegt, ist das die passende Wahl. Nungwi lebt vom Meer und hier ist genau diese entspannte Ferienatmosphäre sofort da.</p>
+              <div class="review">
+                <p><strong>Empfehlung:</strong> würde ich für Beach-Tage, entspannte Sonnenuntergänge und alle empfehlen, die auf Sansibar eher das Resort- und Küstengefühl suchen.</p>
+              </div>
+              <a class="hotel-link" href="https://www.marriott.com/en-us/hotels/travel/znznt-turaco-nungwi-resort-a-tribute-portfolio-hotel" target="_blank" rel="noopener">Hotel ansehen</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="algier">
+      <div class="wrap">
+        <article class="destination algier">
+          <div class="dest-hero">
+            <div class="dest-copy">
+              <p class="kicker">03 · ALGIER</p>
+              <h2 class="serif">Algier.</h2>
+              <p class="intro">Algier fühlt sich nach Kontrasten an: helle Fassaden, breite Boulevards, die Kasbah, starke Aussichtspunkte und eine eigene Energie zwischen Geschichte, Stadtleben und Mittelmeer.</p>
+              <div class="meta">
+                <span class="badge">City Story</span>
+                <span class="badge">Architecture</span>
+                <span class="badge">Food & Hotel</span>
+              </div>
+            </div>
+            <div class="video-shell dark">
+              <video controls playsinline muted loop poster="assets/algier-poster.jpg">
+                <source src="assets/algier.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="dest-body">
+            <div class="grid-2">
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Aktivitäten</h3>
+                <ol>
+                  <li><strong>Kasbah von Algier</strong> — der wichtigste Ort, um die historische Seele der Stadt zu spüren.</li>
+                  <li><strong>Notre-Dame d’Afrique</strong> — eine der schönsten Aussichten über Stadt und Meer.</li>
+                  <li><strong>Jardin d’Essai du Hamma</strong> — grün, weitläufig und perfekt als ruhigere Pause in der Stadt.</li>
+                  <li><strong>Maqam Echahid</strong> — das Märtyrerdenkmal gehört zu den ikonischen Wahrzeichen von Algier.</li>
+                  <li><strong>Bastion 23</strong> — spannender Kultur- und Aussichtspunkt direkt am Meer.</li>
+                  <li><strong>Grande Poste & Boulevard-Spaziergang</strong> — super, um das urbane Zentrum auf dich wirken zu lassen.</li>
+                </ol>
+              </div>
+              <div class="card">
+                <p class="kicker">Top 6</p>
+                <h3 class="serif">Restaurants</h3>
+                <ol>
+                  <li><strong>Bent Bladi</strong> — starker Spot für algerische Küche im Zentrum.</li>
+                  <li><strong>Le Bardo Restaurant</strong> — eleganter und bekannt für einen schöneren Abend.</li>
+                  <li><strong>Restaurant El Walima</strong> — beliebt für klassische algerische Gerichte.</li>
+                  <li><strong>SPHERE Restaurant by Léa</strong> — guter Seafood-Fokus in modernem Rahmen.</li>
+                  <li><strong>Restaurant Sara Plus</strong> — lokaler Tipp mit sehr gutem Ruf.</li>
+                  <li><strong>Caracoya</strong> — gemütliche Option für ein entspanntes Essen mit Charakter.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="hotel dark">
+              <p class="kicker">Hotel Review</p>
+              <h3 class="serif">Sofitel Algiers Hamma Garden</h3>
+              <p>Mein Eindruck: von den Optionen wirkt das Sofitel am rundesten für diese City-Story — komfortabel, hochwertig und als Base für Algier sehr stimmig. Es passt gut, wenn du nach Stadttagen wieder in eine ruhige, gepflegte Hotelatmosphäre zurückkommen willst.</p>
+              <div class="review">
+                <p><strong>Empfehlung:</strong> würde ich für Algier klar als die sicherste und ausgewogenste Wahl empfehlen — besonders für einen stilvollen Stadtaufenthalt mit gutem Komfort.</p>
+              </div>
+              <a class="hotel-link" href="https://all.accor.com/hotel/0566/index.de.shtml" target="_blank" rel="noopener">Hotel ansehen</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="mini-course" id="sprachkurs">
+      <div class="wrap">
+        <div class="course-box">
+          <div class="course-top">
+            <div>
+              <p class="kicker">Kleiner Sprachkurs</p>
+              <h2 class="serif">Deutsch –<br>Algerisches Arabisch</h2>
+            </div>
+            <p>Für die Algier-Section noch ein kleines Extra: ein paar einfache Wörter und Sätze in algerischem Alltagsarabisch, kurz und direkt eingebaut als sympathischer Reise-Service.</p>
+          </div>
+          <div class="phrase-grid">
+            <div class="phrase"><span class="de">Hallo</span><span class="ar">Salam</span><span class="note">eine einfache, freundliche Begrüssung</span></div>
+            <div class="phrase"><span class="de">Guten Morgen</span><span class="ar">Sbah el khir</span><span class="note">morgens sehr nützlich</span></div>
+            <div class="phrase"><span class="de">Danke</span><span class="ar">Shukran</span><span class="note">funktioniert immer</span></div>
+            <div class="phrase"><span class="de">Bitte / gern</span><span class="ar">Afwan</span><span class="note">für „bitte“ oder „gern geschehen“</span></div>
+            <div class="phrase"><span class="de">Wie viel kostet das?</span><span class="ar">Besh-hal?</span><span class="note">super auf Märkten oder im Taxi</span></div>
+            <div class="phrase"><span class="de">Wo ist ...?</span><span class="ar">Win kayen ...?</span><span class="note">praktisch zum Fragen</span></div>
+            <div class="phrase"><span class="de">Sehr lecker</span><span class="ar">Bnin bezaf</span><span class="note">für gutes Essen</span></div>
+            <div class="phrase"><span class="de">Auf Wiedersehen</span><span class="ar">Bslama</span><span class="note">zum Verabschieden</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap about-box">
+        <div class="about-art">
+          <div class="blob-a"></div>
+          <div class="blob-b"></div>
+          <img src="assets/icon.png" alt="seri reist Illustration" />
+        </div>
+        <div class="about-copy">
+          <p class="kicker">Über seri reist</p>
+          <h2 class="serif">Visuelle Reiseberichte mit Lieblingsorten, Food-Spots und echten Empfehlungen.</h2>
+          <p>Die Seite ist bewusst wie ein persönlicher Travel-Guide gedacht: mit Videos, kurzen Einstiegen, kuratierten Tipps und einem klaren Look, der an das Instagram-Icon anknüpft.</p>
+          <p>Weitere Ziele können später im selben Stil ergänzt werden — als neue Stadt, neue Insel oder neue Reise-Route.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="insta" id="kontakt">
+      <div class="wrap">
+        <div class="insta-box">
+          <div>
+            <p class="kicker">Follow the journey</p>
+            <h2 class="serif">Mehr Reise.<br>Mehr Farbe.<br>Mehr unterwegs.</h2>
+          </div>
+          <div class="insta-card">
+            <img src="assets/icon.png" alt="seri reist Instagram Icon" />
+            <div>
+              <strong>@seri_reist</strong>
+              <span>Instagram</span>
+            </div>
+            <a href="#" aria-label="Instagram öffnen">↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="brand"><img src="assets/icon.png" alt="" /><span>SERI REIST</span></div>
+      <span>Stone Town · Nungwi · Algier</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
